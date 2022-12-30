@@ -238,6 +238,7 @@ class Parser:
         chrome_options.add_argument("--log-level=3")
         chrome_options.add_argument("--silent")
         chrome_options.add_argument("--disable-logging")
+        chrome_options.add_argument("--incognito")
         #  removes the 'DevTools listening' log message
         chrome_options.add_experimental_option("excludeSwitches", ["enable-logging"])
         return webdriver.Chrome(
